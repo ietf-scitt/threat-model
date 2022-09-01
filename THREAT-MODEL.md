@@ -1,21 +1,24 @@
 
 # INTRODUCTION
 
-This document provide the information about the threats that were considered for SCITT, and also discusses possible mitigation strategies. This will lead to defining the security requirements for the SCITT.
+This document provides the information about the threats that were considered for SCITT, and also discusses possible mitigation strategies. This will lead to defining the security requirements for the SCITT Architecture.
 
 It also clearly defines certain threats that are out of scope of the SCITT.
 
 
 # System Level Threats
 
-* Denial of Service
+* Denial of Service: 
+
 An attacker may flood any part of SCITT Eco System that prohibits correct users from using the system.
 
-* Information Disclosure
+* Information Disclosure:
+
 A third party may be able to extract sesitive information from SCITT Eco System, example either from SCITT append only log or from receipts that are confidential.
 
-* Loss of Credentials
-An attacker may get access to the credentials of a specific actor and peforming its roles incorrectly. For example, A rogue actor getting access to auditor credentials and generating false audit reports for the SCITT Claims.
+* Loss of Credentials:
+
+An attacker may get access to the credentials of a specific actor and can perform its roles incorrectly. For example, a rogue actor getting access to auditor credentials and generating false audit reports for the SCITT Claims.
 
 
 # Component Level Threats
@@ -37,13 +40,13 @@ The threats are categorized based on the individual building blocks that compris
 
 * Provide log access to only limited actors within a set of authorized actors 
 
-* Provide access of log to unauthorized actors
+* Provide log access to unauthorized actors
 
-* Presenting a forked view of logs to only a sub-set of users
+* Presenting a forked view of log to only a sub-set of users
 
-* Provide access to unrelated claims to authorized third parties.
+* Provide access to unrelated claims to authorized third parties
 
-* Access to Policy documents, that control the behaviour of the log
+* Unauthorized access to policy documents, that control the behaviour of the log
 
 ## Threats to Independent Verifiers
 
