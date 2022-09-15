@@ -1,3 +1,59 @@
+---
+
+title: SCITT Threat Model and Security Considerations
+abbrev: SCITT Threat Model
+docname: draft-threat-model-latest
+stand_alone: true
+ipr: trust200902
+area: Security
+wg: TBD
+kw: Internet-Draft
+cat: std
+consensus: yes
+submissiontype: IETF
+pi:
+  toc: yes
+  sortrefs: yes
+  symrefs: yes
+kramdown_options:
+  auto_id_prefix: sec-
+
+author:
+- ins: Y. Deshpande
+  name: Yogesh Deshpande
+  organization: ARM
+  street: 110 Fulbourn Road
+  code: 'CB1 9NJ'
+  city: Cambridge
+  email: yogesh.deshpande@arm.com
+  country: UK
+- ins: A. Delignat-Lavaud
+  name: Antoine Delignat-Lavaud
+  organization: Microsoft Research
+  street: 21 Station Road
+  code: 'CB1 2FB'
+  city: Cambridge
+  email: antdl@microsoft.com
+  country: UK
+- ins: C. Fournet
+  name: Cedric Fournet
+  organization: Microsoft Research
+  street: 21 Station Road
+  code: 'CB1 2FB'
+  city: Cambridge
+  email: fournet@microsoft.com
+  country: UK
+normative:
+venue:
+  type: non-WG
+  mail: scitt@ietf.org
+
+
+--- abstract
+
+SCITT Threat Model document does an extensive analysis of possible threats to SCITT building blocks and overall threats to the SCITT System. This document is to be read in tandem to the SCITT Architecture Document.
+
+--- middle
 
 # INTRODUCTION
 
@@ -8,7 +64,7 @@ It also clearly defines certain threats that are out of scope of the SCITT.
 
 # System Level Threats
 
-* Denial of Service: 
+* Denial of Service:
 
 An attacker may flood any part of SCITT Eco System that prohibits correct users from using the system.
 
@@ -38,7 +94,7 @@ The threats are categorized based on the individual building blocks that compris
 
 * Issue verifiable receipts for claims that do not match its log
 
-* Provide log access to only limited actors within a set of authorized actors 
+* Provide log access to only limited actors within a set of authorized actors
 
 * Provide log access to unauthorized actors
 
@@ -63,3 +119,8 @@ If the log operation is compromised due to any of th above been compromised, the
 
 * Incorrect use of security practices
 
+--- back
+
+# Attic
+
+Not ready to throw these texts into the trash bin yet.
