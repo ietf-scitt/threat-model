@@ -1,0 +1,187 @@
+
+
+
+
+TBD                                                         Y. Deshpande
+Internet-Draft                                                       ARM
+Intended status: Standards Track                      A. Delignat-Lavaud
+Expires: 19 March 2023                                        C. Fournet
+                                                      Microsoft Research
+                                                       15 September 2022
+
+
+             SCITT Threat Model and Security Considerations
+                       draft-threat-model-latest
+
+Abstract
+
+   SCITT Threat Model document does an extensive analysis of possible
+   threats to SCITT building blocks and overall threats to the SCITT
+   System.  This document is to be read in tandem to the SCITT
+   Architecture Document.
+
+About This Document
+
+   This note is to be removed before publishing as an RFC.
+
+   Status information for this document may be found at
+   https://datatracker.ietf.org/doc/draft-threat-model/.
+
+   Discussion of this document takes place on the scitt non-WG mailing
+   list (mailto:scitt@ietf.org), which is archived at
+   https://mailarchive.ietf.org/arch/browse/scitt/.  Subscribe at
+   https://www.ietf.org/mailman/listinfo/scitt/.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 19 March 2023.
+
+Copyright Notice
+
+   Copyright (c) 2022 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  INTRODUCTION
+   2.  System Level Threats
+   3.  Component Level Threats
+     3.1.  Identity Threats
+     3.2.  Threats to Transparency Service
+     3.3.  Threats to Independent Verifiers
+   4.  Out of Scope
+   Appendix A.  Attic
+   Authors' Addresses
+
+1.  INTRODUCTION
+
+   This document provides the information about the threats that were
+   considered for SCITT, and also discusses possible mitigation
+   strategies.  This will lead to defining the security requirements for
+   the SCITT Architecture.
+
+   It also clearly defines certain threats that are out of scope of the
+   SCITT.
+
+2.  System Level Threats
+
+   *  Denial of Service:
+
+   An attacker may flood any part of SCITT Eco System that prohibits
+   correct users from using the system.
+
+   *  Information Disclosure:
+
+   A third party may be able to extract sesitive information from SCITT
+   Eco System, example either from SCITT append only log or from
+   receipts that are confidential.
+
+   *  Loss of Credentials:
+
+   An attacker may get access to the credentials of a specific actor and
+   can perform its roles incorrectly.  For example, a rogue actor
+   getting access to auditor credentials and generating false audit
+   reports for the SCITT Claims.
+
+3.  Component Level Threats
+
+   The threats are categorized based on the individual building blocks
+   that comprise the SCITT Architecture.
+
+3.1.  Identity Threats
+
+   *  False Identity
+
+   *  Stolen Identity
+
+3.2.  Threats to Transparency Service
+
+   *  Refuse or delay registration of claims
+
+   *  Register claims that do not pass its registration policy
+
+   *  Issue verifiable receipts for claims that do not match its log
+
+   *  Provide log access to only limited actors within a set of
+      authorized actors
+
+   *  Provide log access to unauthorized actors
+
+   *  Presenting a forked view of log to only a sub-set of users
+
+   *  Provide access to unrelated claims to authorized third parties
+
+   *  Unauthorized access to policy documents, that control the
+      behaviour of the log
+
+3.3.  Threats to Independent Verifiers
+
+   *  Compromised Verification Logic
+
+   *  Usage of incorrect receipts during verification
+
+4.  Out of Scope
+
+   The following threats does impact SCITT Eco System but they are
+   covered by other WG, hence out of scope from SCITT perspective.
+
+   *  SCITT append only logs running compromised Hardware, Firmware or
+      Software If the log operation is compromised due to any of th
+      above been compromised, then Remote Attestation of the log
+      servers, as defined in IETF RATS should address the same.
+
+   *  Incorrect use of security practices
+
+Appendix A.  Attic
+
+   Not ready to throw these texts into the trash bin yet.
+
+Authors' Addresses
+
+   Yogesh Deshpande
+   ARM
+   110 Fulbourn Road
+   Cambridge
+   CB1 9NJ
+   United Kingdom
+   Email: yogesh.deshpande@arm.com
+
+
+   Antoine Delignat-Lavaud
+   Microsoft Research
+   21 Station Road
+   Cambridge
+   CB1 2FB
+   United Kingdom
+   Email: antdl@microsoft.com
+
+
+   Cedric Fournet
+   Microsoft Research
+   21 Station Road
+   Cambridge
+   CB1 2FB
+   United Kingdom
+   Email: fournet@microsoft.com
