@@ -1,0 +1,83 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2022-09-18T00:43:35.194764+00:00",
+  "repo": "ietf-scitt/threat-model",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOH62HMM4_CCCa",
+      "title": "Introduce RFC build System in place",
+      "url": "https://github.com/ietf-scitt/threat-model/pull/1",
+      "state": "MERGED",
+      "author": "yogeshbdeshpande",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-09-15T14:40:13Z",
+      "updatedAt": "2022-09-15T14:55:22Z",
+      "baseRepository": "ietf-scitt/threat-model",
+      "baseRefName": "main",
+      "baseRefOid": "5834d0555fc02e039acd78d6d5bdc4c2c242ffe7",
+      "headRepository": "ietf-scitt/threat-model",
+      "headRefName": "ci-pipeline",
+      "headRefOid": "501c34c962d42cd070afa3a3612f377f16d5dacf",
+      "closedAt": "2022-09-15T14:55:21Z",
+      "mergedAt": "2022-09-15T14:55:21Z",
+      "mergedBy": "yogeshbdeshpande",
+      "mergeCommit": {
+        "oid": "c793b79a5db24ce28a2eefcca3bc48cc4726afc1"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
