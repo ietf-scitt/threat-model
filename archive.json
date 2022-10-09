@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-10-06T00:46:48.397979+00:00",
+  "timestamp": "2022-10-09T00:44:02.681858+00:00",
   "repo": "ietf-scitt/threat-model",
   "labels": [
     {
@@ -49,7 +49,24 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 2,
+      "id": "I_kwDOH62HMM5TcBXs",
+      "title": "Add GitHub Metadata",
+      "url": "https://github.com/ietf-scitt/threat-model/issues/2",
+      "state": "OPEN",
+      "author": "OR13",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Include link to latest published doc: https://ietf-scitt.github.io/threat-model/draft-threat-model.html\r\n\r\nTags\r\n\r\nDescription.",
+      "createdAt": "2022-10-06T15:21:32Z",
+      "updatedAt": "2022-10-06T15:21:41Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": [
     {
       "number": 1,
